@@ -1,5 +1,5 @@
 // importamos el objeto `validator`, que contiene las funciones `isValid` y `maskify`
-import validator from '../src/validator';
+import validator, { luhnCheck } from '../src/validator';
 
 describe('validator', () => {
   it('debería ser un objeto', () => {
@@ -12,7 +12,7 @@ describe('validator', () => {
     });
 
     it.skip('debería retornar true para "4083952015263"', () => {
-      // escribe aquí tu test
+      expect(luhnCheck("4083952015263").toBe(true));
     });
 
     it.skip('debería retornar true para "79927398713"', () => {
