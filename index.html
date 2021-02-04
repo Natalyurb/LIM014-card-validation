@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <!--Primer formulario  de entrada-->
+    <section id="page1">
+     <header>
+       <section class="cabeza">
+       <h1 class="subtitle">Paga tus servicios sin salir de casa.</h1>
+       <section class="menu"> 
+        <li>
+         <input id="Registrar" type="button" value="Registrar" >
+        </li>
+        <li>
+         <input id="Ingresar" type="button" value="Ingresar" >
+        </li>
+       </section>
+       </section>
+       <section class="contenedor-imagen">
+        <img src="imagen/image 12.svg" alt="" class="img">
+       </section>
+     </header>
+    </section>
+    <!--Segundo formulario de registro-->
+    <section id="page2" class="ocultar">
+     <header >
+       <section class="cabeza">
+        <h1 class="subtitle">Datos personales:</h1>
+       <section class="menu">
+        <input id="nombre" type="text" placeholder="Ingrese su nombre y apellido">
+        <p id="mensaje" class="result" ></p>
+        <input id="dni" type="number" placeholder="DNI">
+       </section>
+       </section>
+       <section class="contenedor-imagen">
+          <img src="imagen/image 12.svg" alt="" class="img">
+       </section>
+     </header>
+       <section class="next">
+          <o>
+            <button id="Siguiente" type="button" class="Siguiente" >Siguiente</button>
+          </o> 
+       </section>
+    </section>
+    <!--Tercer formulario de Validacion de tarjeta-->
+    <section id="page3" class="ocultar">
+     <header>
+       <section class="cabeza2">
+       <h1 class="title">Bienvenido a Servipay comienza a pagar tus servicios.</h1>
+       <h2 class="subtitle2">Validacion</h2>
+       <section class="menu2">
+        <input id="userNum" size="25" placeholder="Ingresar tarjeta" type="text" />
+       <section id="resultLuhn" class="resultado">
+        <p></p>
+      </section>
+       <section id="mask" class="resultado"><p></p></section>
+
+        <input type="password" id="cvv" placeholder="CVV" maxlength="3">
+       </section>
+       </section>
+       <section class="contenedor-imagen2">
+          <img src="imagen/image 12.svg" alt="" class="img">
+       </section>
+     </header>
+       <section class="next2">
+         <o>
+          <button id="submitBtn" class="Siguiente" >Siguiente</button>
+         </o> 
+       </section>
+    </section>
+    <!--Cuarto formulario de categorias de Servicios-->
+    <section id="page4" class="ocultar">
+     <header>
+       <section>
+        <h1 class="title2">Categorias</h1>
+       </section>
+       <section class="contenedor-imagen3"> 
+        <input type="image" name="botonenvio" src="imagen/barritas.svg" alt="enviar a opciones">
+       </section>
+       <section class="contenedor-imagen4"> 
+          <input type="image" name="botonenvio1" src="imagen/imagen casa.svg" alt="enviar a opciones">
+          <h3>Hogar</h3>
+       </section>
+       <section class="contenedor-imagen5"> 
+          <input type="image" name="botonenvio1" src="imagen/tarjetas.svg" alt="enviar a opciones">
+          <h3>Tarjetas</h3>
+       </section>
+       <section class="contenedor-imagen6"> 
+          <input type="image" name="botonenvio1" src="imagen/estudios.svg" alt="enviar a opciones">
+          <h3>Estudios</h3>
+       </section>
+       <section class="contenedor-imagen7"> 
+          <input type="image" name="botonenvio1" src="imagen/tramites.svg" alt="enviar a opciones">
+          <h3>Tramites</h3>
+       </section>
+     </header>
+       <section class="next3">
+         <o>
+          <button id="Salir" type="submit" class="Salir" >Salir</button>
+         </o> 
+       </section>
+    </section>
+  <script src="index.js" type="module"></script>
+  </body>
+</html>
+
